@@ -1,5 +1,4 @@
-import Image from "next/image";
-import logoImage from "../public/images/main-logo.png";
+import arrowIcon from "../public/images/arrow-icon.png";
 
 export default function Home() {
 	return (
@@ -57,6 +56,39 @@ export default function Home() {
 					</div>
 				</nav>
 			</header>
+
+			<main>
+				{/* hero section */}
+				<div className="bg-black py-[72px] text-white bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)]">
+					<div className="max-w-7xl mx-auto">
+						<div className="text-center">
+							<a
+								href="#"
+								className="border py-1 px-2 rounded-lg border-white/30 inline-flex gap-3"
+							>
+								<span className="bg-[linear-gradient(to_right,#F87AFF,#FB93D0,#FFDD99,#C3F0B2,#2FD8FE)] text-transparent bg-clip-text [-webkit-background-clip:text]">
+									Version 2.0 is here
+								</span>
+								<button className="inline-flex items-center gap-1">
+									<span>Read More</span> <img src="/images/arrow-icon.png" />
+								</button>
+							</a>
+						</div>
+						<h1 className="text-5xl font-bold tracking-tighter text-center mt-8 leading-[50px]">
+							One Task <br />
+							at a Time
+						</h1>
+						<p>
+							Celebrate the joy of accomplishment with an app designed to track
+							your progress, motivate your efforts, and celebrate your
+							successes.
+						</p>
+						<button className="bg-white py-2 px-4 rounded-lg text-black/80">
+							Get for free
+						</button>
+					</div>
+				</div>
+			</main>
 		</div>
 	);
 }
