@@ -21,10 +21,38 @@ export default function Home() {
 				</div>
 				{/* navigation */}
 				<nav className="flex items-center justify-between h-[80px] bg-black px-[20px] py-[20px]">
+					{/* logo */}
 					<img src="/images/main-logo.png" className="cursor-pointer" />
+
+					{/* nav items */}
 					<div>
-						<div className="h-[40px] w-[40px] flex items-center justify-center border-[1px] rounded-md border-white/30 cursor-pointer">
+						{/* mobile menu icon */}
+						<div className="h-[40px] w-[40px] flex items-center justify-center border-[1px] rounded-md border-white/30 cursor-pointer sm:hidden">
 							<img src="/images/menu-icon.png" />
+						</div>
+
+						{/* tablet/desktop menu */}
+						<div className="hidden sm:flex gap-6 text-white items-center">
+							<ul className="flex gap-6">
+								<li className="text-white text-opacity-60 hover:text-opacity-100 transition-all duration-300">
+									<a href="#">About</a>
+								</li>
+								<li className="text-white text-opacity-60 hover:text-opacity-100 transition-all duration-300">
+									<a href="#">Features</a>
+								</li>
+								<li className="text-white text-opacity-60 hover:text-opacity-100 transition-all duration-300">
+									<a href="#">Updates</a>
+								</li>
+								<li className="text-white text-opacity-60 hover:text-opacity-100 transition-all duration-300">
+									<a href="#">Help</a>
+								</li>
+								<li className="text-white text-opacity-60 hover:text-opacity-100 transition-all duration-300">
+									<a href="#">Customers</a>
+								</li>
+							</ul>
+							<button className="bg-white text-black/80 py-2 px-4 rounded-lg">
+								Get for free
+							</button>
 						</div>
 					</div>
 				</nav>
