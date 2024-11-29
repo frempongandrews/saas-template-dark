@@ -63,8 +63,8 @@ export default function Home() {
 					<div className="relative overflow-clip">
 						{/* hero section */}
 						{/* radial circle */}
-						<div className="absolute rounded-[100%] bg-black w-[750px] h-[375px] sm:w-[1536px] sm:h-[768px] left-1/2 -translate-x-1/2 border border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-96px)] sm:top-[calc(100%-120px)]"></div>
-						<div className=" bg-black py-[72px] sm:py-[96px] text-white bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)]">
+						<div className="absolute rounded-[100%] bg-black w-[750px] h-[375px] sm:w-[1536px] sm:h-[768px] lg:w-[2100px] left-1/2 -translate-x-1/2 border border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-96px)] sm:top-[calc(100%-120px)] md:top-[calc(100%-180px)]"></div>
+						<div className=" bg-black py-[72px] sm:py-[96px] md:py-[160px] text-white bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)]">
 							<div className="relative max-w-7xl mx-auto">
 								<div className="text-center">
 									<a
@@ -92,7 +92,7 @@ export default function Home() {
 											src="/images/message.png"
 											className="hidden sm:inline absolute -right-[0px] md:-right-[40px]"
 										/>
-										<h1 className="text-6xl sm:text-7xl md:text-8xl font-bold tracking-tighter text-center leading-[70px]">
+										<h1 className="lg:text-red-600 text-6xl sm:text-7xl md:text-8xl font-bold tracking-tighter text-center leading-[70px]">
 											One Task <br />
 											at a Time
 										</h1>
