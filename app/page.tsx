@@ -1,4 +1,5 @@
 import arrowIcon from "../public/images/arrow-icon.png";
+import { FAQs } from "./components/FAQs";
 import { Features } from "./components/Features";
 import { LogoTicker } from "./components/LogoTicker";
 import { ProductShowcase } from "./components/ProductShowcase";
@@ -122,6 +123,9 @@ export default function Home() {
 
 					{/* Product Showcase */}
 					<ProductShowcase />
+
+					{/* FAQs */}
+					<FAQs />
 				</main>
 				<footer>footer</footer>
 			</div>
