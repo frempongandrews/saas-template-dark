@@ -1,6 +1,7 @@
 import arrowIcon from "../public/images/arrow-icon.png";
 import { Features } from "./components/Features";
 import { LogoTicker } from "./components/LogoTicker";
+import { ProductShowcase } from "./components/ProductShowcase";
 
 export default function Home() {
 	return (
@@ -61,7 +62,7 @@ export default function Home() {
 					</nav>
 				</header>
 
-				<main>
+				<main className="">
 					<div className="relative overflow-clip">
 						{/* hero section */}
 						{/* radial circle */}
@@ -115,11 +116,12 @@ export default function Home() {
 					</div>
 					{/* logo ticker */}
 					<LogoTicker />
-					{/* End logo ticker */}
 
 					{/* Features */}
 					<Features />
-					{/* End Features */}
+
+					{/* Product Showcase */}
+					<ProductShowcase />
 				</main>
 				<footer>footer</footer>
 			</div>
