@@ -22,7 +22,7 @@ export const Features = () => {
 	return (
 		<div className="bg-black text-white py-[72px] sm:py-24">
 			{/* Container */}
-			<div className="max-w-screen-xl mx-auto">
+			<div className="max-w-screen-lg mx-auto">
 				<h2 className="text-center font-bold text-5xl sm:text-6xl tracking-tighter">
 					Everything you need
 				</h2>
@@ -33,22 +33,23 @@ export const Features = () => {
 						and quickly
 					</p>
 				</div>
-
-				<div className="mt-16 flex flex-col sm:flex-row gap-4">
-					{features.map(({ title, description }) => {
-						return (
-							<div
-								key={title}
-								className="border border-white/30 px-5 py-10 text-center rounded-xl sm:flex-1"
-							>
-								<div className="inline-flex h-14 w-14 bg-white text-black justify-center items-center rounded-lg">
-									<img src="/images/ecosystem-icon.png" />
+				<div className="flex items-center justify-center">
+					<div className="px-[20px] lg:px-0 mt-16 flex flex-col w-[100%] sm:w-[80%] lg:flex-row lg:w-[100%] gap-4">
+						{features.map(({ title, description }) => {
+							return (
+								<div
+									key={title}
+									className="border border-white/30 px-5 py-10 text-center rounded-xl sm:flex-1"
+								>
+									<div className="inline-flex h-14 w-14 bg-white text-black justify-center items-center rounded-lg">
+										<img src="/images/ecosystem-icon.png" />
+									</div>
+									<h3 className="mt-6 font-bold">{title}</h3>
+									<p className="mt-2 text-white/70">{description}</p>
 								</div>
-								<h3 className="mt-6 font-bold">{title}</h3>
-								<p className="mt-2 text-white/70">{description}</p>
-							</div>
-						);
-					})}
+							);
+						})}
+					</div>
 				</div>
 			</div>
 			{/* End container */}

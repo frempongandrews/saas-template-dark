@@ -1,7 +1,7 @@
 // @ts-nocheck
 export const ProductShowcase = () => {
 	return (
-		<div className="bg-black text-white bg-gradient-to-b from-black to-[#5D2CA8] py-[72px]  sm:py-24">
+		<div className="bg-black text-white bg-gradient-to-b from-black to-[#5D2CA8] py-[72px] sm:py-24">
 			{/* Container */}
 			<div className="max-w-screen-xl mx-auto">
 				<h2 className="text-center text-5xl sm:text-6xl font-bold tracking-tighter">
@@ -19,7 +19,7 @@ export const ProductShowcase = () => {
 					<img
 						src="/images/product-screenshot.png"
 						alt="the product screenshot"
-						className="mt-14 inline-block"
+						className="mt-14 inline-block lg:max-w-screen-lg"
 					/>
 				</div>
 			</div>
