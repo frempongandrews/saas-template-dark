@@ -3,6 +3,15 @@ export const FooterCTA = () => {
 	return (
 		<div className="bg-black text-white py-[72px] sm:py-24 text-center">
 			<div className="max-w-xl mx-auto relative">
+				{/* big icons */}
+				<img
+					src="/images/helix-icon.png"
+					className="hidden sm:inline sm:absolute sm:-right-[220px] md:-right-[260px]"
+				/>
+				<img
+					src="/images/pie-icon.png"
+					className="hidden sm:inline sm:absolute sm:left-0"
+				/>
 				<h2 className="font-bold text-5xl tracking-tighter sm:text-6xl">
 					Get instant access
 				</h2>

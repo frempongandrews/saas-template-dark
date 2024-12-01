@@ -63,7 +63,7 @@ export default function Home() {
 					</nav>
 				</header>
 
-				<main className="">
+				<main className="overflow-hidden">
 					<div className="relative overflow-clip">
 						{/* hero section */}
 						{/* radial circle */}
