@@ -130,7 +130,29 @@ export default function Home() {
 					{/* Footer CTA */}
 					<FooterCTA />
 				</main>
-				<footer>footer</footer>
+				<footer className="py-5 bg-black text-white border-t border-white/20 px-[20px]">
+					<div>
+						<div className="flex flex-col gap-4 sm:flex-row sm:justify-between">
+							<div className="text-center">
+								&copy; 2024 Your Company, Inc. All rights reserved
+							</div>
+							<ul className="flex justify-center gap-2.5">
+								<li>
+									<img src="/images/x.png" />
+								</li>
+								<li>
+									<img src="/images/insta.png" />
+								</li>
+								<li>
+									<img src="/images/tiktok.png" />
+								</li>
+								<li>
+									<img src="/images/youtube.png" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</footer>
 			</div>
 			{/* end page wrapper */}
 		</div>
