@@ -10,7 +10,7 @@ export const FooterCTA = () => {
 				/>
 				<img
 					src="/images/pie-icon.png"
-					className="hidden sm:inline sm:absolute sm:left-0"
+					className="hidden sm:inline sm:absolute sm:-left-[220px] md:-left-[260px] top-[-100px]"
 				/>
 				<h2 className="font-bold text-5xl tracking-tighter sm:text-6xl">
 					Get instant access
