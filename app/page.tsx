@@ -1,6 +1,6 @@
-import arrowIcon from "../public/images/arrow-icon.png";
 import { FAQs } from "./components/FAQs";
 import { Features } from "./components/Features";
+import { FooterCTA } from "./components/FooterCTA";
 import { LogoTicker } from "./components/LogoTicker";
 import { ProductShowcase } from "./components/ProductShowcase";
 
@@ -126,6 +126,9 @@ export default function Home() {
 
 					{/* FAQs */}
 					<FAQs />
+
+					{/* Footer CTA */}
+					<FooterCTA />
 				</main>
 				<footer>footer</footer>
 			</div>
