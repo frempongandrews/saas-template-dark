@@ -1,17 +1,40 @@
 // @ts-nocheck
+
+"use client";
+
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+
 export const FooterCTA = () => {
+	const containerRef = useRef<HTMLDivElement>(null);
+
+	const { scrollYProgress } = useScroll({
+		target: containerRef,
+		offset: ["start end", "end end"],
+	});
+
+	const translateY = useTransform(scrollYProgress, [0, 1], [-100, 0]);
+
 	return (
-		<div className="bg-black text-white py-[72px] sm:py-24 text-center">
+		<div
+			className="bg-black text-white py-[72px] sm:py-24 text-center"
+			ref={containerRef}
+		>
 			<div className="max-w-xl mx-auto relative">
 				{/* big icons */}
-				<img
-					src="/images/helix-icon.png"
-					className="hidden sm:inline sm:absolute sm:-right-[220px] md:-right-[260px]"
-				/>
-				<img
-					src="/images/pie-icon.png"
-					className="hidden sm:inline sm:absolute sm:-left-[220px] md:-left-[260px] top-[-100px]"
-				/>
+				<motion.div style={{ translateY }}>
+					<img
+						src="/images/helix-icon.png"
+						className="hidden sm:inline sm:absolute sm:-right-[220px] md:-right-[260px]"
+					/>
+				</motion.div>
+				<motion.div style={{ translateY }}>
+					<img
+						src="/images/pie-icon.png"
+						className="hidden sm:inline sm:absolute sm:-left-[220px] md:-left-[260px] top-[-100px]"
+					/>
+				</motion.div>
+
 				<h2 className="font-bold text-5xl tracking-tighter sm:text-6xl">
 					Get instant access
 				</h2>
