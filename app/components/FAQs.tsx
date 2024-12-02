@@ -4,6 +4,7 @@
 import { useState } from "react";
 import clsx from "clsx";
 import { FaMinus } from "react-icons/fa6";
+import { motion, AnimatePresence } from "framer-motion";
 
 const items = [
 	{
@@ -44,9 +45,17 @@ const AccordionItem = ({ question, answer }: AccordionItemProps) => {
 				<span className="flex-1 text-lg font-bold">{question}</span>
 				{isOpen ? <FaMinus /> : <img src="/images/plus-icon.png" />}
 			</div>
-			<div className={clsx("mt-4", { hidden: !isOpen, "": isOpen })}>
-				{answer}
-			</div>
+			<AnimatePresence>
+				{isOpen && (
+					<motion.div
+						initial={{ opacity: 0, height: 0, marginTop: 0 }}
+						animate={{ opacity: 1, height: "auto", marginTop: "16px" }}
+						exit={{ opacity: 0, height: 0, marginTop: 0 }}
+					>
+						{answer}
+					</motion.div>
+				)}
+			</AnimatePresence>
 		</div>
 	);
 };
