@@ -59,7 +59,10 @@ export const Hero = () => {
 						</div>
 					</div>
 
-					<p className="mt-8 text-center w-[75%] sm:w-[50%] max-w-md mx-auto text-2xl font-light">
+					<p
+						className="mt-8 text-center w-[75%] sm:w-[50%] max-w-md mx-auto text-2xl font-light"
+						id="about"
+					>
 						Celebrate the joy of accomplishment with an app designed to track
 						your progress, motivate your efforts, and celebrate your successes.
 					</p>

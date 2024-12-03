@@ -17,6 +17,7 @@ export const FooterCTA = () => {
 
 	return (
 		<div
+			id="access"
 			className="bg-black text-white py-[72px] sm:py-24 text-center"
 			ref={containerRef}
 		>

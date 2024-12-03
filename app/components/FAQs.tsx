@@ -62,7 +62,10 @@ const AccordionItem = ({ question, answer }: AccordionItemProps) => {
 
 export const FAQs = () => {
 	return (
-		<div className="bg-black text-white bg-gradient-to-b from-[#5D2CAB] to-black py-[72px]">
+		<div
+			className="bg-black text-white bg-gradient-to-b from-[#5D2CAB] to-black py-[72px]"
+			id="faqs"
+		>
 			{/* Container */}
 			<div className="max-w-screen-md mx-auto px-[20px] md:px-[0px]">
 				<h2 className="text-center text-5xl sm:text-6xl font-bold tracking-tighter">
