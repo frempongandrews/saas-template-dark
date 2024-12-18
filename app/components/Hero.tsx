@@ -26,7 +26,7 @@ export const Hero = () => {
 					<div className="relative flex justify-center items-center max-w-[700px] mx-auto mt-8">
 						<div className="">
 							{/* cursor image */}
-							<motion.div
+							{/* <motion.div
 								className="hidden sm:inline absolute -left-[0px] md:-left-[20px]"
 								drag
 								dragSnapToOrigin
@@ -36,11 +36,11 @@ export const Hero = () => {
 									className="max-w-none"
 									draggable="false"
 								/>
-							</motion.div>
+							</motion.div> */}
 
 							{/* message image */}
 
-							<motion.div
+							{/* <motion.div
 								className="hidden sm:inline absolute -right-[0px] md:-right-[40px]"
 								draggable
 								dragSnapToOrigin
@@ -50,11 +50,11 @@ export const Hero = () => {
 									className="max-w-none"
 									draggable="false"
 								/>
-							</motion.div>
+							</motion.div> */}
 
 							<h1 className="text-6xl sm:text-7xl md:text-8xl font-bold tracking-tighter text-center leading-[70px]">
-								One Task <br />
-								at a Time
+								Taska: <br />
+								Simple management
 							</h1>
 						</div>
 					</div>

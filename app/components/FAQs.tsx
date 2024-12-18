@@ -73,7 +73,7 @@ export const FAQs = () => {
 				</h2>
 				<div className="mt-12">
 					{items.map(({ question, answer }) => (
-						<AccordionItem question={question} answer={answer} />
+						<AccordionItem question={question} answer={answer} key={question} />
 					))}
 				</div>
 			</div>
